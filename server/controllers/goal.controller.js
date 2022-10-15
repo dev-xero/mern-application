@@ -17,6 +17,11 @@ const get_goals = (req, res) => {
  * @param {*} res 
  */
 const post_goals = (req, res) => {
+	const { text } = req.body
+	if (!text) {
+		res.status(400)
+		throw new Error('Please add a text field')
+	}
 	res.status(200).json({ msg: 'POST Goals' })
 }
 
