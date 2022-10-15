@@ -21,4 +21,5 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/goals', require('./routes/goal.routes'))
+app.use('/api/users', require('./routes/user.routes'))
 app.use(error_handler)
