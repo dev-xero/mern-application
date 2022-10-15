@@ -1,6 +1,7 @@
 /**
  * @desc Get **all user** goals
  * @route **GET** /api/goals
+ * @access **PRIVATE**
  * @param {*} req 
  * @param {*} res 
  */
@@ -11,6 +12,7 @@ const get_goals = (req, res) => {
 /**
  * @desc Create **a new user** goal
  * @route **POST** /api/goals
+ * @access **PRIVATE**
  * @param {*} req 
  * @param {*} res 
  */
@@ -21,6 +23,7 @@ const post_goals = (req, res) => {
 /**
  * @desc Update **an existing user** goal
  * @route **PUT** /api/goals/:id
+ * @access **PRIVATE**
  * @param {*} req 
  * @param {*} res 
  */
@@ -32,6 +35,7 @@ const put_goals = (req, res) => {
 /**
  * @desc Delete **a specific user** goal
  * @route **DELETE** /api/goals/:id
+ * @access **PRIVATE**
  * @param {*} req 
  * @param {*} res 
  */
