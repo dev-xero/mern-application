@@ -1,0 +1,22 @@
+{
+  "name": "mern-tutorial",
+  "version": "1.0.0",
+  "description": "MERN STACK application with authentication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js"
+  },
+  "keywords": [
+    "MERN",
+    "STACK"
+  ],
+  "author": "THE CODE NINJA",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5"
+  }
+}
