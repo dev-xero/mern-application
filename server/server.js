@@ -15,6 +15,19 @@ connectDB(
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use((req, res, next) => {
+  const { method } = req
+  if (method === 'GET') {
+    console.log(`${method}`.green, `${req.path}`)
+  } else if (method === 'POST') {
+    console.log(`${method}`.yellow, `${req.path}`)
+  } else if (method === 'PUT') {
+    console.log(`${method}`.blue, `${req.path}`)  
+  } else {
+    console.log(`${method}`.red, `${req.path}`)
+  }
+  next()
+})
 
 app.get('/', (req, res) => {
 	res.status(200).json({ msg: 'Welcome to the API' })
