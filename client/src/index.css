@@ -198,6 +198,10 @@ h3 {
   margin-right: 8px;
 }
 
+.btn.logout-btn svg {
+  color: hsl(0, 0%, 100%);
+}
+
 .btn-reverse {
   background: hsl(0, 0%, 100%);
   color: hsl(210, 100%, 60%);
@@ -218,7 +222,7 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: hsla(0, 0%, 100%, 0.936);
+  background-color: hsla(213, 9%, 19%, 0.936);
   z-index: 5000;
   display: flex;
   justify-content: center;
