@@ -3,7 +3,6 @@
   src: url('./fonts/outfit.ttf');
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +11,14 @@
 
 body {
   font-family: 'outfit', sans-serif;
-  height: 100vh;
+  height: 100%;
+  background-color: hsl(210, 8%, 5%);
+  color: hsl(217, 75%, 95%);
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: hsl(210, 100%, 60%);
 }
 
 p {
@@ -51,9 +52,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  padding: 20px;
+  background-color: hsl(210, 10%, 7%);
+  margin-top: 12px;
   margin-bottom: 60px;
+  border-radius: 12px;
 }
 
 .header ul {
@@ -64,19 +67,31 @@ h3 {
 
 .header ul li {
   margin-left: 20px;
-}
-
-.header ul li a {
   display: flex;
   align-items: center;
 }
 
+.header ul li a {
+  margin-right: 12px;
+  color: hsl(217, 75%, 95%);
+}
+
+.header ul li svg {
+  color: hsl(210, 100%, 60%);
+}
+
 .header ul li a:hover {
-  color: #777;
+  color: hsl(210, 100%, 60%);
 }
 
 .header ul li a svg {
   margin-right: 5px;
+}
+
+.header .logo a {
+  font-weight: 800;
+  font-size: 2rem;
+  color: hsl(210, 100%, 60%) !important;
 }
 
 .heading {
