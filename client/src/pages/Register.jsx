@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { FaUser, FaChevronRight } from 'react-icons/fa'
 
 const Register = () => {
@@ -11,7 +11,16 @@ const Register = () => {
 
   const { name, email, password, confirmPassword } = formData
 
-  const handleChange = () => {}
+	const handleChange = (ev) => {
+		setFormData(prevState => ({
+			...prevState,
+			[ev.target.name]: ev.target.value
+		}))
+	}
+	
+	const handleSubmit = (ev) => {
+		ev.preventDefault()
+	}
 
   return (
     <>
@@ -23,7 +32,7 @@ const Register = () => {
         <p>Create an account to continue</p>
       </section>
       <section className="form">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             {/* Username */}
             <input
