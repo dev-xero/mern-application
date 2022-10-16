@@ -150,7 +150,7 @@ h3 {
   margin-bottom: 10px;
   font-family: inherit;
   outline: none;
-  transition: ease border 150ms
+  transition: ease border 150ms;
 }
 
 .form-group input:focus,
@@ -218,7 +218,7 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: hsla(0, 0%, 100%, 0.936);
   z-index: 5000;
   display: flex;
   justify-content: center;
@@ -229,7 +229,7 @@ h3 {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #000 transparent #555 transparent;
+  border-color: hsl(210, 100%, 60%) transparent hsl(210, 82%, 47%) transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
