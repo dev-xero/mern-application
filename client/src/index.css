@@ -113,10 +113,23 @@ h3 {
 }
 
 .goal {
-  background-color: #f4f4f4;
-  margin: 10px 0;
-  padding: 20px 0 10px;
+  background-color: hsl(210, 12%, 10%);
+  padding: 20px 10px;
   position: relative;
+  cursor: pointer;
+  transition: background-color ease 150ms;
+}
+
+.goal:hover {
+  background-color: hsl(210, 100%, 60%);
+}
+
+.goal h2 {
+  font-size: 20px;
+}
+
+.goal .date {
+  margin-bottom: 12px;
 }
 
 .goal .close {
@@ -126,6 +139,15 @@ h3 {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+.content.goals-section {
+  margin-top: 40px !important;
+  margin-bottom: 40px;
+}
+
+.content.goals-section .heading {
+  color: hsl(210, 100%, 60%);
 }
 
 .form,
