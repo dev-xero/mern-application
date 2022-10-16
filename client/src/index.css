@@ -55,7 +55,7 @@ h3 {
   padding: 20px;
   background-color: hsl(210, 10%, 7%);
   margin-top: 12px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   border-radius: 12px;
 }
 
@@ -97,12 +97,13 @@ h3 {
 .heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding: 0 20px;
 }
 
 .heading p {
-  color: #828282;
+  color: hsl(210, 100%, 60%);
+  font-size: 18px;
 }
 
 .goals {
@@ -141,11 +142,21 @@ h3 {
 .form-group textarea,
 .form-group select {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #e6e6e6;
+  padding: 12px;
+  border: 1px solid hsl(210, 12%, 10%);
+  background-color: hsl(210, 10%, 7%);
+  color: hsl(217, 75%, 95%);
   border-radius: 5px;
   margin-bottom: 10px;
   font-family: inherit;
+  outline: none;
+  transition: ease border 150ms
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: hsl(210, 100%, 60%);
 }
 
 .form-group label {
@@ -155,11 +166,11 @@ h3 {
 }
 
 .btn {
-  padding: 10px 20px;
-  border: 1px solid #000;
+  padding: 14px 20px;
+  border: 1px solid hsl(210, 100%, 60%);
   border-radius: 5px;
-  background: #000;
-  color: #fff;
+  background: hsl(210, 100%, 60%);
+  color: hsl(0, 0%, 100%);
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -168,6 +179,19 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: ease transform 150ms;
+}
+
+.form-group .btn {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group .btn svg {
+  margin-left: 12px;
+  width: 8px;
 }
 
 .btn svg {
@@ -175,8 +199,8 @@ h3 {
 }
 
 .btn-reverse {
-  background: #fff;
-  color: #000;
+  background: hsl(0, 0%, 100%);
+  color: hsl(210, 100%, 60%);
 }
 
 .btn-block {
@@ -185,7 +209,7 @@ h3 {
 }
 
 .btn:hover {
-  transform: scale(0.98);
+  transform: scale(0.99);
 }
 
 .loadingSpinnerContainer {
